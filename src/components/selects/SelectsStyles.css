@@ -1,0 +1,28 @@
+.selects .container {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+.container-img:hover{
+    animation: aumentar 0.3s ease forwards;
+}
+@keyframes aumentar {
+    from {
+        transform: scale(1); 
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+.selects h1 {
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 740px) {
+    .selects .container {
+        grid-template-columns: 1fr;
+    }
+}

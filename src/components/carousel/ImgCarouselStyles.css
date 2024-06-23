@@ -1,0 +1,22 @@
+.carousel {
+    padding: 2rem 0;
+    margin-top: -90px;
+    margin-bottom: 15px
+}
+
+
+.carousel img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.thumbs-wrapper, .carousel-status {
+    display: none;
+}
+
+.container h1 {
+    padding: 3rem;
+    text-align: center;
+    margin-bottom: -25px;
+}
+
