@@ -4,9 +4,7 @@
     margin-top: 40px;
 }
 
-.p-bold {
-    font-weight: 700;
-}
+
 
 .sub-titulo {
     color: #25469D;
@@ -16,7 +14,9 @@
     margin-bottom: 29px;
  
 }
-
+.intro h2{
+    color: #25469D;
+}
 
 
 .carousel-container {
@@ -25,6 +25,11 @@
     margin: 0 auto;
     position: relative;
     margin-top: 80px;
+}
+
+.carousel-container h3{
+    font-style: italic;
+    font-weight: 200;
 }
 
 .carousel-list {
@@ -111,8 +116,36 @@
 
 }
 
+/* Ajuste para diminuir o tamanho do input */
+.modal-content input,
+.modal-content select,
+.modal-content textarea {
+    width: 37%; 
+    padding: 8px; /* Reduzir o padding para diminuir o tamanho do campo */
+    font-size: 14px; /* Ajustar o tamanho da fonte */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 480px;
+    margin-top: 7px;
+    
+}
+.modal-content hr{
+    margin-bottom: 48px;
+}
+
+.modal-content button{
+    margin-bottom: 80px;
+    border-radius: 14px;
+    padding: 12px;
+    width: 10%;
+    margin-left: 690px;
+    margin-top: 9px;
+}
+
+
 .modal-content h2{
-    margin: 30px;
+    margin: 22px;
+    font-weight: 400;
 }
 .modal{
     margin-left: 190px;

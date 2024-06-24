@@ -11,7 +11,7 @@ import oculos5 from '../assets/vogue.webp';
 import oculos6 from '../assets/armani_oculos.webp';
 
 const EstilosSection = () => {
-  const [modalAberto, setModalAberto] = useState(true); // Inicialmente o modal está aberto
+  const [modalAberto, setModalAberto] = useState(true);
 
   const settings = {
     dots: true,
@@ -66,24 +66,25 @@ const EstilosSection = () => {
       {modalAberto && (
         <div className="modal">
           <div className="modal-content">
-            <h2>Receba agora o orçamentos para seus óculos vision's</h2>
+            <h2>Receba agora o orçamento para seus óculos vision's</h2>
+            <hr></hr>
             <form id="formOrcamento">
-              <label htmlFor="nome">Nome completo</label>
+              <label htmlFor="nome">Nome completo*</label>
               <input type="text" id="nome" name="nome" required />
 
-              <label htmlFor="email">E-mail</label>
+              <label htmlFor="email">E-mail *</label>
               <input type="email" id="email" name="email" required />
 
-              <label htmlFor="celular">Celular / Whatsapp</label>
+              <label htmlFor="celular">Celular / Whatsapp *</label>
               <input type="text" id="celular" name="celular" required />
 
-              <label htmlFor="descricao">Descrição da graduação de sua receita</label>
-              <textarea id="descricao" name="descricao" rows="4" required></textarea>
+              <label htmlFor="descricao">Descrição *</label>
+              <textarea id="descricao" name="descricao" rows="4" required placeholder='Por favor, descreva a graduação de sua receita'></textarea>
 
               <label htmlFor="arquivo">Anexe sua receita (opcional)</label>
               <input type="file" id="arquivo" name="arquivo" />
 
-              <label htmlFor="cep">CEP (Não sabe seu CEP?)</label>
+              <label htmlFor="cep">CEP </label>
               <input type="text" id="cep" name="cep" />
 
               <button type="submit">Enviar</button>

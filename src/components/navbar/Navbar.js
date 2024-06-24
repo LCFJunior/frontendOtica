@@ -56,7 +56,7 @@ function Navbar() {
             password,
         };
 
-        axios.post('http://192.168.15.11:5001/Cadastro', userData, {
+        axios.post('http://  192.168.15.9:5001/Cadastro', userData, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -77,7 +77,7 @@ function Navbar() {
             password: loginPassword,
         };
 
-        axios.post('http://192.168.15.11:5001/Login', userData, {
+        axios.post('http:// 192.168.15.9:5001/Login', userData, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -108,7 +108,7 @@ function Navbar() {
             telephone,
         };
 
-        axios.put('http://192.168.15.11:5001/Alterar', updatedData, {
+        axios.put('http:// 192.168.15.9:5001/Alterar', updatedData, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': token,
@@ -124,7 +124,7 @@ function Navbar() {
     };
 
     const handleDelete = () => {
-        axios.delete('http://192.168.15.11:5001/Excluir', {
+        axios.delete('http:// 192.168.15.9:5001/Excluir', {
             headers: {
                 'Authorization': token,
             },

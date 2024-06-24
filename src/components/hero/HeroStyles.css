@@ -4,6 +4,91 @@
     color: #fff;
     position: relative;
 }
+/* Estilos para o modal */
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 198px;
+}
+
+.ReactModal__Content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    outline: none;
+}
+
+.ReactModal__Content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.ReactModal__Content button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ReactModal__Content button:hover {
+    background-color: #0056b3;
+}
+
+.ReactModal__Content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ReactModal__Content label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.ReactModal__Content input,
+.ReactModal__Content textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.ReactModal__Content input:focus,
+.ReactModal__Content textarea:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+.ReactModal__Content textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+/*fim dos estilos para modal*/
+
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.1);

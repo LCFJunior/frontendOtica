@@ -75,7 +75,7 @@ function Search() {
                             </div>
                             <div className="input-wrap">
                                 <label>Data de Entrega</label>
-                                <input type="date" />
+                                <input type="date" disabled />
                             </div>
                         </div>
                         <button>Verificar </button>
