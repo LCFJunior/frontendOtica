@@ -1,6 +1,5 @@
 import React from 'react'
 import './HeroStyles.css'
-import {AiOutlineSearch} from 'react-icons/ai'
 import { BsFillTelephoneFill } from "react-icons/bs";
 
 import Video from '../../assets/background-video4.mp4'

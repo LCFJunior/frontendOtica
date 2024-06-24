@@ -1,0 +1,159 @@
+
+.intro{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.p-bold {
+    font-weight: 700;
+}
+
+.sub-titulo {
+    color: #25469D;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    margin-bottom: 29px;
+ 
+}
+
+
+
+.carousel-container {
+    overflow: hidden;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 80px;
+}
+
+.carousel-list {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    animation: scroll 20s linear infinite;
+}
+
+.carousel-list li {
+    width: auto;
+    margin-right: 72px;
+    padding: 33px;
+    border-radius: 5px;
+    border: 1px solid #E7E8ED;
+    background: no-repeat;
+}
+
+.carousel-list img {
+    width: 400px;
+
+}
+
+/* Pausa a animação quando o mouse passa sobre o carrossel */
+#carouselContainer:hover .carousel-list {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-400px * 4));
+        /* 400px (largura) * 4 (quantidade de itens) */
+    }
+}
+
+/* Componente texto e imagem na pagina armacoes */
+
+.componente-texto-imagem {
+    margin-top: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 60px;
+}
+
+.componente-texto-imagem img {
+    width: 620px;
+    border-radius: 4px;
+    border: 1px solid #CDD1DA;
+}
+
+.componente-texto {
+    width: 500px;
+}
+
+.oculos1 {
+    width: 350px;
+    margin-top: 99px;
+}
+
+.oculos2 {
+    width: 300px;
+    margin-top: 78px;
+}
+
+.oculos3 {
+    width: 325px;
+    margin-top: 75px;
+}
+
+.oculos4 {
+    width: 460px
+}
+.oculos5{
+    width: 500px;
+    margin-top: 100px;
+}
+.oculos6{
+    width: 400px;
+
+}
+
+.modal-content h2{
+    margin: 30px;
+}
+.modal{
+    margin-left: 190px;
+    position: flex;
+    width: 80%;
+    height: 100%;
+}
+
+.modal-content{
+    text-align: center;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=email], textarea, input[type=file] {
+    width: 100%;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+  
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+label {
+    font-weight: bold;
+}

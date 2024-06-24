@@ -18,6 +18,10 @@
     display: flex;
 }
 
+.nav-menu-NavLink{
+    color: #fff;
+}
+
 li {
     padding: 0 1rem;
     cursor: pointer;

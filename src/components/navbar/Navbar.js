@@ -9,6 +9,7 @@ import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
 import { Link } from 'react-scroll';
+import { NavLink } from 'react-router-dom';
 
 import './NavbarStyles.css';
 
@@ -53,7 +54,7 @@ function Navbar() {
             password,
         };
 
-        axios.post('http://192.168.15.11:5001/Cadastro', userData, {
+        axios.post('http://192.168.15.6:5001/Cadastro', userData, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -74,7 +75,7 @@ function Navbar() {
             password: loginPassword,
         };
 
-        axios.post('http://192.168.15.11:5001/Login', userData, {
+        axios.post('http://192.168.15.6:5001/Login', userData, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -105,7 +106,7 @@ function Navbar() {
             telephone,
         };
 
-        axios.put('http://192.168.15.11:5001/Alterar', updatedData, {
+        axios.put('http://192.168.15.6:5001/Alterar', updatedData, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': token,
@@ -121,7 +122,7 @@ function Navbar() {
     };
 
     const handleDelete = () => {
-        axios.delete('http://192.168.15.11:5001/Excluir', {
+        axios.delete('http://192.168.15.6:5001/Excluir', {
             headers: {
                 'Authorization': token,
             },
@@ -146,6 +147,7 @@ function Navbar() {
                 <Link to='carousel' smooth={true} duration={500}><li>Tendências</li></Link>
                 <Link to='search' smooth={true} duration={500}><li>Certificado</li></Link>
                 <Link to='views' smooth={true} duration={500}><li>Lojas</li></Link>
+                <NavLink className = "nav-menu-NavLink" to="/oculos"><li>Óculos</li></NavLink>
             </ul>
             <div className="nav-icons">
                 {isLoggedIn ? (
