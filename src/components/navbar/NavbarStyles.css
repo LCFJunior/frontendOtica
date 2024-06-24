@@ -67,7 +67,7 @@ li {
     position: fixed;
     top: 80px;
     left: 800px;
-    height: 485px;
+    height: 580px;
     width: 285px;
     border-radius: 25px;
     background-color: rgba(40, 32, 94, 0.9);
@@ -80,7 +80,7 @@ li {
     position: fixed;
     top: 80px;
     left: 800px;
-    height: 485px;
+    height: 510px;
     width: 285px;
     border-radius: 25px;
     background-color: rgba(40, 32, 94, 0.9);
@@ -109,7 +109,7 @@ li {
 .ModalTitle {
     color: #fff;
     margin-top: 35px;
-    margin-left: 100px;
+    margin-left: 10px;
     margin-bottom: 30px;
 }
 
@@ -126,7 +126,7 @@ li {
 
 .buttonmodal1 {
     margin-top: 26px;
-    margin-left: 25px;
+    margin-left: 5px;
     animation: modalFadeOut 0.3s ease-out;
 }
 
@@ -137,18 +137,39 @@ li {
 }
 
 .inputsModal {
+    margin-right: 60px;
+    height: 20px;
+}
+
+.inputsModalLogin {
+    margin-right: 80px;
+    height: 20px;
+}
+
+.inputsModalEdit {
+    margin-right: 80px;
     height: 20px;
 }
 
 .buttonmodal1login{
     margin-top: 30px;
-    margin-left: 33px;
+    margin-left: 0px;
 }
 
 .FormLabel {
+    margin-right: 55px;
     color: #fff;
 }
 
+.FormLabelEdit {
+    margin-right: 72px;
+    color: #fff;
+}
+
+.FormLabelLogin {
+    margin-right: 75px;
+    color: #fff;
+}
 .buttonmodal2login{
     
     margin-left: 33px;
@@ -156,28 +177,35 @@ li {
 
 .ModalTitleLogin {
     margin-top: 35px;
-    margin-left: 115px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.ModalTitleEdit {
+    margin-top: 35px;
+    margin-left: 15px;
     margin-bottom: 30px;
     color: #fff;
 }
 
 .buttonmodal1edit {
     margin-top: 20px;
-    margin-left: 95px;
+    margin-left: 0px;
     animation: modalFadeOut 0.3s ease-out;
 }
 
 .buttonmodal2edit {
     width: 120px;
     margin-top: 30px;
-    margin-left: 15px;
+    margin-left: 1px;
     animation: modalFadeOut 0.3s ease-out;
 }
 
 .buttonmodal3edit {
     width: 120px;
     margin-top: 30px;
-    margin-left: 15px;
+    margin-left: 10px;
     animation: modalFadeOut 0.3s ease-out;
 }
 

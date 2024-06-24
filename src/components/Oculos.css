@@ -126,13 +126,6 @@
     margin: 0 auto;
 }
 
-input[type=text], input[type=email], textarea, input[type=file] {
-    width: 100%;
-    padding: 18px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 10px;
-}
 
 form {
     display: grid;

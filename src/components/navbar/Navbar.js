@@ -10,6 +10,8 @@ import Modal from 'react-bootstrap/Modal';
 import axios from 'axios';
 import { Link } from 'react-scroll';
 import { NavLink } from 'react-router-dom';
+import { ImExit } from "react-icons/im";
+import { MdEdit } from "react-icons/md";
 
 import './NavbarStyles.css';
 
@@ -54,7 +56,7 @@ function Navbar() {
             password,
         };
 
-        axios.post('http://192.168.15.6:5001/Cadastro', userData, {
+        axios.post('http://192.168.15.11:5001/Cadastro', userData, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -75,7 +77,7 @@ function Navbar() {
             password: loginPassword,
         };
 
-        axios.post('http://192.168.15.6:5001/Login', userData, {
+        axios.post('http://192.168.15.11:5001/Login', userData, {
             headers: {
                 'Content-Type': 'application/json',
             },
@@ -106,7 +108,7 @@ function Navbar() {
             telephone,
         };
 
-        axios.put('http://192.168.15.6:5001/Alterar', updatedData, {
+        axios.put('http://192.168.15.11:5001/Alterar', updatedData, {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': token,
@@ -122,7 +124,7 @@ function Navbar() {
     };
 
     const handleDelete = () => {
-        axios.delete('http://192.168.15.6:5001/Excluir', {
+        axios.delete('http://192.168.15.11:5001/Excluir', {
             headers: {
                 'Authorization': token,
             },
@@ -152,8 +154,8 @@ function Navbar() {
             <div className="nav-icons">
                 {isLoggedIn ? (
                     <>
-                        <RiLoginBoxLine className='icon' style={{ marginRight: '1rem' }} onClick={handleShowEditModal} />
-                        <BsPerson className='icon' onClick={handleLogout} />
+                        <MdEdit className='icon' style={{ marginRight: '1rem' }} onClick={handleShowEditModal} />
+                        <ImExit className='icon' onClick={handleLogout} />
                     </>
                 ) : (
                     <>
@@ -279,8 +281,8 @@ function Navbar() {
                 <Modal.Body>
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmailLogin">
-                            <Form.Label className='FormLabel'>Email ‎ </Form.Label>
-                            <Form.Control className='inputsModal'
+                            <Form.Label className='FormLabelLogin'>Email ‎ </Form.Label>
+                            <Form.Control className='inputsModalLogin'
                                 type="email"
                                 placeholder="name@example.com"
                                 value={loginEmail}
@@ -289,8 +291,8 @@ function Navbar() {
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicSenhaLogin">
-                            <Form.Label className='FormLabel'>Senha</Form.Label>
-                            <Form.Control className='inputsModal'
+                            <Form.Label className='FormLabelLogin'>Senha</Form.Label>
+                            <Form.Control className='inputsModalLogin'
                                 type="password"
                                 placeholder="******"
                                 value={loginPassword}
@@ -322,8 +324,8 @@ function Navbar() {
                 <Modal.Body>
                     <Form>
                         <Form.Group className="mb-3" controlId="formBasicUsernameEdit">
-                            <Form.Label className='FormLabel'>Usuário</Form.Label>
-                            <Form.Control className='inputsModal'
+                            <Form.Label className='FormLabelEdit'>Usuário</Form.Label>
+                            <Form.Control className='inputsModalEdit'
                                 type="text"
                                 placeholder="ex: john123"
                                 value={username}
@@ -332,8 +334,8 @@ function Navbar() {
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicEmailEdit">
-                            <Form.Label className='FormLabel'>Email   ‎  ‎  </Form.Label>
-                            <Form.Control className='inputsModal'
+                            <Form.Label className='FormLabelEdit'>Email   ‎  ‎  </Form.Label>
+                            <Form.Control className='inputsModalEdit'
                                 type="email"
                                 placeholder="name@example.com"
                                 value={email}
@@ -341,8 +343,8 @@ function Navbar() {
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicCPFEdit">
-                            <Form.Label className='FormLabel'>CPF‎ ‎ ‎ ‎  ‎ ‎ </Form.Label>
-                            <Form.Control className='inputsModal'
+                            <Form.Label className='FormLabelEdit'>CPF‎ ‎ ‎ ‎  ‎ ‎ </Form.Label>
+                            <Form.Control className='inputsModalEdit'
                                 type="text"
                                 placeholder="123.456.789-01"
                                 value={CPF}
@@ -350,8 +352,8 @@ function Navbar() {
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="formBasicTelefoneEdit">
-                            <Form.Label className='FormLabel'>Telefone</Form.Label>
-                            <Form.Control className='inputsModal'
+                            <Form.Label className='FormLabelEdit'>Telefone</Form.Label>
+                            <Form.Control className='inputsModalEdit'
                                 type="text"
                                 placeholder="(48)91234-5678"
                                 value={telephone}
