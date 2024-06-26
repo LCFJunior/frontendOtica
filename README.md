@@ -1,4 +1,4 @@
-# Ótica - FRONTEND
+# VISION's - FRONTEND
 # ![Logo do Projeto](otica.jpg.png)
 
 # Getting Started with Create React App
